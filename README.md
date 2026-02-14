@@ -22,31 +22,116 @@ Why Git is used:
 - Support branching and merging
 - Integrate with CI/CD pipelines
 
-Basic Git Commands:
+## 🧠 Git Commands with Clear Explanations (Real-World Use)
 
 git init  
-Initialize a new repository  
+→ Initializes a new Git repository in the current folder.
 
 git clone <repo_url>  
-Clone a remote repository  
+→ Copies a remote repository to your local system.
 
 git status  
-Check file status  
+→ Shows the current state of files (modified, staged, untracked).
 
 git add .  
-Stage changes  
+→ Stages all modified and new files for commit.
+
+git add <file_name>  
+→ Stages a specific file.
 
 git commit -m "message"  
-Commit changes  
+→ Saves staged changes with a meaningful message.
 
-git push origin main  
-Push code to remote  
+git log  
+→ Displays complete commit history.
+
+git log --oneline  
+→ Shows commit history in a short, readable format.
+
+git branch  
+→ Lists all branches in the repository.
+
+git branch <branch_name>  
+→ Creates a new branch.
+
+git checkout <branch_name>  
+→ Switches to an existing branch.
+
+git checkout -b <branch_name>  
+→ Creates and switches to a new branch.
+
+git branch -d <branch_name>  
+→ Deletes a branch after merging.
 
 git pull  
-Fetch latest changes  
+→ Fetches and merges latest changes from remote.
 
-git checkout -b feature-branch  
-Create and switch branch  
+git pull origin main  
+→ Updates local main branch from remote.
+
+git fetch  
+→ Downloads changes from remote without merging.
+
+git push  
+→ Uploads local commits to remote repository.
+
+git push origin main  
+→ Pushes commits to the main branch.
+
+git push origin <branch_name>  
+→ Pushes a specific branch to remote.
+
+git merge <branch_name>  
+→ Merges the specified branch into the current branch.
+
+git merge main  
+→ Brings main branch changes into current branch.
+
+git merge --abort  
+→ Cancels an ongoing merge if conflicts occur.
+
+git remote -v  
+→ Shows connected remote repositories.
+
+git remote add origin <repo_url>  
+→ Connects local repository to remote repository.
+
+git reset --soft HEAD~1  
+→ Undo last commit but keep changes staged.
+
+git reset --hard HEAD~1  
+→ Completely removes last commit and changes.
+
+git stash  
+→ Temporarily saves uncommitted changes.
+
+git stash list  
+→ Shows all stashed changes.
+
+git stash apply  
+→ Restores the most recent stashed changes.
+
+git diff  
+→ Shows differences between working directory and staging area.
+
+git diff --staged  
+→ Shows differences between staged files and last commit.
+
+git revert <commit_id>  
+→ Creates a new commit that reverses a previous commit.
+
+git tag  
+→ Lists all tags.
+
+git tag <tag_name>  
+→ Creates a version tag for a release.
+
+git config --global user.name "Your Name"  
+→ Sets global Git username.
+
+git config --global user.email "your@email.com"  
+→ Sets global Git email.
+
 
 Industry Usage:
 - Feature branch workflow
